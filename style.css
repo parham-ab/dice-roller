@@ -1,0 +1,99 @@
+/* css resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  background-color: rgb(236, 236, 236);
+  font-family: cursive;
+}
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(81deg, #0fc0ca, #0554c3, #950df0, #f00d47);
+  background-size: 800% 800%;
+
+  -webkit-animation: grad 50s ease infinite;
+  -moz-animation: grad 50s ease infinite;
+  -o-animation: grad 50s ease infinite;
+  animation: grad 50s ease infinite;
+}
+@-webkit-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes grad {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 51%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* dice container */
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgb(185, 52, 52);
+  color: #fff;
+  margin: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 20px 8px 0px;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: rgb(146, 33, 33);
+  transition: all 0.2s ease;
+}
+.btn:active {
+  background-color: rgb(126, 23, 23);
+  transition: all 0.1s;
+}
